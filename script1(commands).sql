@@ -35,3 +35,25 @@ describe student_table;
 select student_id,email,course_name from student_table;
 
 select * from student_table;
+
+//DCL
+
+set SQL_SAFE_UPDATES = 0;
+
+delete from student_table;
+
+SELECT * FROM student_table;
+
+
+insert into student_table (student_id,student_name,course_name,email)
+values (1,"prakash",'c1002','prakash@mail.com');
+
+insert into student_table (student_id,student_name,course_name,email)
+values (2,"akash",'c1003','akash@mail.com');
+
+insert into student_table (student_id,student_name,course_name,email)
+values (3,"bash",'c1004','bash@mail.com');
+
+truncate table student_table;
+
+select * from student_table;
